@@ -23,8 +23,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <a href="#">
-                <Logo className="h-10 md:h-12" />
+              <a href="#" className="flex items-center">
+                <Logo variant="icon" showText={true} />
               </a>
             </div>
             
@@ -725,7 +725,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="mb-4">
-                <Logo className="h-10 md:h-12" />
+                <Logo variant="icon" showText={true} dark={true} />
               </div>
               <p className="text-gray-400 text-sm">
                 Senior-led cybersecurity and IT services for growing organizations.
