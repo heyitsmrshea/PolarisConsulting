@@ -4,7 +4,7 @@ interface LogoProps {
   dark?: boolean
 }
 
-export default function Logo({ variant = 'full', className = '', dark = false }: LogoProps) {
+export default function Logo({ variant = 'full', className = '' }: LogoProps) {
   const logoSrc = '/logo.svg'
 
   if (variant === 'icon') {

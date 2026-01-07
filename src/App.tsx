@@ -725,7 +725,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="mb-4">
-                <Logo dark className="h-10 md:h-12" />
+                <Logo className="h-10 md:h-12" />
               </div>
               <p className="text-gray-400 text-sm">
                 Senior-led cybersecurity and IT services for growing organizations.
