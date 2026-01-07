@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import Logo from './components/Logo'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -22,12 +23,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">P</span>
-                </div>
-                <span className="text-2xl font-bold text-gray-900">Polaris</span>
-              </div>
+              <a href="#">
+                <Logo className="h-10 md:h-12" />
+              </a>
             </div>
             
             {/* Desktop Navigation */}
@@ -726,11 +724,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">P</span>
-                </div>
-                <span className="text-2xl font-bold">Polaris</span>
+              <div className="mb-4">
+                <Logo dark className="h-10 md:h-12" />
               </div>
               <p className="text-gray-400 text-sm">
                 Senior-led cybersecurity and IT services for growing organizations.
