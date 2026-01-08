@@ -11,7 +11,7 @@ export function Footer() {
                         <img
                             src={`${basePath}logo-icon.svg`}
                             alt="Polaris Consulting logo"
-                            className="h-8 w-8"
+                            className="h-10 w-10"
                         />
                         <span className="text-gray-400">© 2025 Polaris Consulting. All rights reserved.</span>
                     </div>

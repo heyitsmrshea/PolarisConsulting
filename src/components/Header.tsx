@@ -17,8 +17,8 @@ export function Header() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-                    ? 'bg-[#0a0f1a]/95 dark:bg-[#0a0f1a]/95 backdrop-blur-xl border-b border-white/5 dark:border-white/5 py-4'
-                    : 'bg-transparent py-6'
+                ? 'bg-[#0a0f1a]/95 dark:bg-[#0a0f1a]/95 backdrop-blur-xl border-b border-white/5 dark:border-white/5 py-4'
+                : 'bg-transparent py-6'
                 }`}
             role="navigation"
             aria-label="Main navigation"
@@ -29,7 +29,7 @@ export function Header() {
                         <img
                             src={`${basePath}logo-icon.svg`}
                             alt="Polaris Consulting logo"
-                            className="h-10 w-10 transition-transform duration-300 group-hover:scale-110"
+                            className="h-12 w-12 transition-transform duration-300 group-hover:scale-110"
                         />
                         <span className="text-xl font-semibold tracking-tight">
                             <span className="text-white dark:text-white">Polaris</span>
