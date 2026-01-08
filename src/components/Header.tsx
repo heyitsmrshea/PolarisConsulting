@@ -41,17 +41,18 @@ export function Header() {
                         {['Services', 'Industries', 'Contact'].map((item) => (
                             <a
                                 key={item}
-                                href={`/#${item.toLowerCase()}`}
+                                href={`#${item.toLowerCase()}`}
                                 className="text-sm text-gray-400 hover:text-white dark:hover:text-white transition-colors duration-300 tracking-wide uppercase"
                             >
                                 {item}
                             </a>
                         ))}
 
+
                         <ThemeToggle />
 
                         <a
-                            href="/#contact"
+                            href="#contact"
                             className="ml-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-sm font-semibold text-white tracking-wide uppercase hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
                         >
                             Get Started
@@ -88,7 +89,7 @@ export function Header() {
                     {['Services', 'Industries', 'Contact'].map((item) => (
                         <a
                             key={item}
-                            href={`/#${item.toLowerCase()}`}
+                            href={`#${item.toLowerCase()}`}
                             className="block text-lg text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -96,7 +97,7 @@ export function Header() {
                         </a>
                     ))}
                     <a
-                        href="/#contact"
+                        href="#contact"
                         className="block w-full text-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-semibold text-white"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >

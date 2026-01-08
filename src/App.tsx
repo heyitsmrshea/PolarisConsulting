@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import {
   Header,
   Hero,
@@ -31,7 +31,7 @@ function HomePage() {
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <HashRouter>
         <div className="min-h-screen bg-[#0a0f1a] dark:bg-[#0a0f1a] bg-gray-50 text-white dark:text-white text-gray-900 overflow-x-hidden transition-colors duration-300">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -39,7 +39,7 @@ function App() {
             <Route path="/terms" element={<Terms />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }
