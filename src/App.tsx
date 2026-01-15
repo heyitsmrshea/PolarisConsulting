@@ -8,7 +8,14 @@ import {
   CTA,
   Contact,
   Footer,
-  ThemeProvider
+  ThemeProvider,
+  TrustBar,
+  Testimonials,
+  Process,
+  FAQ,
+  LeadMagnet,
+  Pricing,
+  ScrollProgress
 } from './components'
 import { Privacy, Terms } from './pages'
 import './App.css'
@@ -18,9 +25,15 @@ function HomePage() {
     <>
       <Header />
       <Hero />
+      <TrustBar />
       <Services />
+      <LeadMagnet />
+      <Process />
       <Partners />
+      <Testimonials />
+      <Pricing />
       <Industries />
+      <FAQ />
       <CTA />
       <Contact />
       <Footer />
@@ -32,7 +45,8 @@ function App() {
   return (
     <ThemeProvider>
       <HashRouter>
-        <div className="min-h-screen bg-[#0a0f1a] dark:bg-[#0a0f1a] bg-gray-50 text-white dark:text-white text-gray-900 overflow-x-hidden transition-colors duration-300">
+        <div className="min-h-screen bg-gray-50 dark:bg-[#0a0f1a] text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-300">
+          <ScrollProgress />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/privacy" element={<Privacy />} />

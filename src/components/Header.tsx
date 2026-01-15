@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ThemeToggle } from './ThemeProvider'
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -48,9 +47,6 @@ export function Header() {
                             </a>
                         ))}
 
-
-                        <ThemeToggle />
-
                         <a
                             href="#contact"
                             className="ml-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-sm font-semibold text-white tracking-wide uppercase hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
@@ -59,8 +55,7 @@ export function Header() {
                         </a>
                     </div>
 
-                    <div className="flex items-center gap-4 lg:hidden">
-                        <ThemeToggle />
+                    <div className="lg:hidden">
                         <button
                             className="p-2 text-white dark:text-white"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
